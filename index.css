@@ -1,0 +1,27 @@
+*{
+    padding:0;
+    margin:0;
+}
+
+
+@font-face{
+    font-family: myDidot;
+    src:url("didot.ttf");
+}
+
+#containerMain{
+    position:absolute;
+    height:100%;
+    width:100%;
+    background-color: rgb(249, 220, 236);
+}
+header{
+    position:relative;
+    top:225px;
+    text-align:center;
+    color:white;
+    font-family: myDidot, "Century Gothic";
+    font-size:4em;
+    width:50%;
+    margin:auto;
+}
