@@ -5,10 +5,10 @@
 $(function() {
     var $conMain = $("#containerMain");
     var $header = $("header");
+    var $logo = $("#containerMain > a > img");
     $conMain.hide().delay(200).fadeIn(1000);
-    $header.css("opacity", 0).delay(1200).animate({
-        opacity:1
-    },1500);
+    $header.hide().delay(1200).fadeIn(1500);
+    $logo.hide().delay(3000).fadeIn(1500);
 
     /*
     function spin(item, delayTime){

@@ -17,11 +17,22 @@
 }
 header{
     position:relative;
-    top:225px;
+    padding-top:225px;
     text-align:center;
     color:white;
     font-family: myDidot, "Century Gothic";
     font-size:4em;
     width:50%;
     margin:auto;
+}
+
+#containerMain > a{
+    position:relative;
+    display:block;
+    width:162px;
+    margin:auto;
+}
+
+#containerMain > a > img{
+    border-radius:50px;
 }
