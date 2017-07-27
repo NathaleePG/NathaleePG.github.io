@@ -9,6 +9,10 @@
     src:url("didot.ttf");
 }
 
+body{
+    font-family: myDidot, "Century Gothic";
+}
+
 #containerMain{
     position:absolute;
     height:100%;
@@ -20,7 +24,6 @@ header{
     padding-top:225px;
     text-align:center;
     color:white;
-    font-family: myDidot, "Century Gothic";
     font-size:4em;
     margin:auto;
 }
@@ -39,4 +42,13 @@ header{
 
 #containerMain > a > img:hover{
     opacity:1;
+}
+
+footer{
+    position:relative;
+    font-size: 1.25em;
+    color:white;
+    margin-top:25px;
+    text-align:center;
+    font-style:italic;
 }
