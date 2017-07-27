@@ -22,7 +22,6 @@ header{
     color:white;
     font-family: myDidot, "Century Gothic";
     font-size:4em;
-    width:50%;
     margin:auto;
 }
 
@@ -35,4 +34,9 @@ header{
 
 #containerMain > a > img{
     border-radius:50px;
+    opacity:0.8;
+}
+
+#containerMain > a > img:hover{
+    opacity:1;
 }
