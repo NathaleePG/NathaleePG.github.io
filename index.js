@@ -8,10 +8,10 @@ $(function() {
     var $logo = $("#containerMain > img");
     var $footer = $("footer");
     var $secCon = $("#containerSec");
-    $conMain.hide().delay(200).fadeIn(1000);
+    $conMain.delay(200).fadeIn(1000);
     $header.hide().delay(1200).fadeIn(1500);
-    $logo.hide().delay(3000).fadeIn(1500);
-    $footer.hide().delay(4800).fadeIn(1500);
+    $logo.hide().delay(3000).fadeIn(1250);
+    $footer.hide().delay(4800).fadeIn(1250);
 
     $logo.on("click", function(){
         $conMain.fadeOut(1500);
