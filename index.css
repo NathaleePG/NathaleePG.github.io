@@ -13,10 +13,13 @@ body{
     font-family: myDidot, "Century Gothic";
 }
 
-#containerMain{
-    position:absolute;
+.container{
     height:100%;
     width:100%;
+}
+
+#containerMain{
+    position:absolute;
     background-color: rgb(249, 220, 236);
 }
 header{
@@ -28,19 +31,16 @@ header{
     margin:auto;
 }
 
-#containerMain > a{
+#containerMain > img{
     position:relative;
     display:block;
     width:162px;
     margin:auto;
-}
-
-#containerMain > a > img{
     border-radius:50px;
     opacity:0.8;
 }
 
-#containerMain > a > img:hover{
+#containerMain > img:hover{
     opacity:1;
 }
 
@@ -52,3 +52,65 @@ footer{
     text-align:center;
     font-style:italic;
 }
+
+#containerSec{
+    position:absolute;
+    background-color:white;
+    text-align:center;
+    display:none;
+}
+
+#containerSec > #logon1{
+    position:relative;
+    width:81px;
+    height:75px;
+    background:url("logo2.jpg") center;
+    background-size:81px 75px;
+    top:25px;
+    margin:auto;
+}
+#containerSec > #topHeader{
+    position:relative;
+    font-size:2.5em;
+    margin-left:1.5%;
+}
+#containerSec > .aligntop{
+    display:inline-block;
+    margin-top:100px;
+
+}
+
+#containerSec > ul{
+    position:relative;
+    margin-top:20px;
+    text-align:center;
+}
+
+#containerSec > ul > li{
+    display:inline-block;
+    border-radius:10px;
+    width:185px;
+    font-size:0.9em;
+}
+
+li span{
+    text-align:center;
+}
+
+#l1{
+    background-color:rgb(249, 220, 236);
+}
+
+#l2{
+    background-color:rgb(249, 221, 252);
+}
+#l3{
+    background-color:rgb(215, 252, 248);
+}
+#l4{
+    background-color:rgb(205, 249, 212);
+}
+#l5{
+    background-color:rgb(254, 242, 215);
+}
+
