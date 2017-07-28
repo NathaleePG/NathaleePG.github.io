@@ -69,11 +69,13 @@ footer{
     background-size:81px 75px;
     top:25px;
     margin:auto;
+    right:50px;
 }
 #containerSec > #topHeader{
     position:relative;
     font-size:2.5em;
-    margin-left:1.5%;
+    margin-left:15px;
+    right:50px;
 }
 #containerSec > .aligntop{
     display:inline-block;
@@ -93,6 +95,7 @@ footer{
     border-radius:10px;
     width:185px;
     font-size:0.9em;
+    margin:-1px;
 }
 
 #containerSec > ul > li > a{
@@ -123,3 +126,14 @@ li span{
     background-color:rgb(254, 242, 215);
 }
 
+@media screen and (max-width:557px){
+    #containerSec > #topHeader{
+        right:0;
+    }
+    #containerSec > #logon1{
+        right:0;
+    }
+    #containerSec > ul > li{
+        width:225px;
+    }
+}
