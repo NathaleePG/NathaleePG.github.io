@@ -9,6 +9,11 @@
     src:url("didot.ttf");
 }
 
+@font-face{
+    font-family: myAvenir;
+    src:url("avenir.otf");
+}
+
 body{
     font-family: myDidot, "Century Gothic";
 }
@@ -87,6 +92,7 @@ footer{
     position:relative;
     margin-top:20px;
     text-align:center;
+    font-family: myAvenir;
 }
 
 #containerSec > ul > li{
@@ -96,6 +102,7 @@ footer{
     width:185px;
     font-size:0.9em;
     margin:-1px;
+    padding:5px 0;
 }
 
 #containerSec > ul > li > a{
@@ -108,6 +115,8 @@ footer{
     position:absolute;
     list-style-type:none;
     width:100%;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius:10px;
 }
 
 #containerSec > ul > li > ul > li{
@@ -115,7 +124,15 @@ footer{
     line-height:40px;
     display:none;
     text-align:left;
-    margin-left:30px;
+}
+
+#containerSec > ul > li > ul > li > a{
+    text-decoration:none;
+    color:black;
+    padding-left:30px;
+    display:block;
+
+
 }
 
 #containerSec > ul > li:hover > ul > li{
@@ -160,6 +177,22 @@ li span{
 
 #i5{
     background-color:rgba(254, 242, 215, 0.16);
+}
+
+#containerSec > ul > li > #i1 a:hover{
+    background-color:rgba(249, 220, 236, 0.41);
+}
+
+#containerSec > ul > li > #i2 a:hover{
+    background-color:rgba(249, 221, 252, 0.41);
+}
+
+#containerSec > ul > li > #i4 a:hover{
+    background-color:rgba(205, 249, 212, 0.41);
+}
+
+#containerSec > ul > li > #i5 a:hover{
+    background-color:rgba(254, 242, 215, 0.41);
 }
 
 @media screen and (max-width:557px){
