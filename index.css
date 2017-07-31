@@ -92,7 +92,6 @@ footer{
     position:relative;
     margin-top:20px;
     text-align:center;
-    font-family: myAvenir;
 }
 
 #containerSec > ul > li{
@@ -117,6 +116,7 @@ footer{
     width:100%;
     border-bottom-right-radius: 10px;
     border-bottom-left-radius:10px;
+    font-family: myAvenir;
 }
 
 #containerSec > ul > li > ul > li{
@@ -204,5 +204,8 @@ li span{
     }
     #containerSec > ul > li{
         width:225px;
+    }
+    #containerSec > ul > li:hover > ul{
+        z-index:2;
     }
 }
