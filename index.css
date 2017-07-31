@@ -100,7 +100,7 @@ footer{
     border-radius:10px;
     width:185px;
     font-size:0.9em;
-    margin:1px -1px;
+    margin:0 -1px;
 }
 
 #containerSec > ul > li > a{
@@ -111,8 +111,10 @@ footer{
 
 #containerSec > ul > li > ul{
     position:absolute;
+    margin-top:-1px;
     list-style-type:none;
-    width:100%;
+    width:97%;
+    left:1.5%;
     border-bottom-right-radius: 10px;
     border-bottom-left-radius:10px;
     font-family: myAvenir;
