@@ -168,7 +168,7 @@ li span{
 }
 
 #i1{
-    background-color:rgba(249, 220, 236, 0.16);
+    background-color:rgba(249, 220, 236, 0.9);
 }
 
 #l2{
@@ -176,7 +176,7 @@ li span{
 }
 
 #i2{
-    background-color:rgba(249, 221, 252, 0.31);
+    background-color:rgba(249, 221, 252, 0.9);
 }
 #l3{
     background-color:rgb(215, 252, 248);
@@ -185,66 +185,68 @@ li span{
     background-color:rgb(205, 249, 212);
 }
 #i4{
-    background-color:rgba(205, 249, 212, 0.31);
+    background-color:rgba(205, 249, 212, 0.9);
 }
 #l5{
     background-color:rgb(254, 242, 215);
 }
 
 #i5{
-    background-color:rgba(254, 242, 215, 0.16);
+    background-color:rgba(254, 242, 215, 0.9);
 }
 
 #containerSec > #fixed > ul > li > #i1 a:hover{
-    background-color:rgba(249, 220, 236, 0.41);
+    background-color:rgba(249, 220, 236, 1);
 }
 
 #containerSec > #fixed > ul > li > #i2 a:hover{
-    background-color:rgba(249, 221, 252, 0.41);
+    background-color:rgba(249, 221, 252, 1);
 }
 
 #containerSec > #fixed > ul > li > #i4 a:hover{
-    background-color:rgba(205, 249, 212, 0.41);
+    background-color:rgba(205, 249, 212, 1);
 }
 
 #containerSec > #fixed > ul > li > #i5 a:hover{
-    background-color:rgba(254, 242, 215, 0.41);
+    background-color:rgba(254, 242, 215, 1);
 }
 
 #containerSec > #containerLeft{
     position:relative;
     width:20%;
-    height:100%;
+    margin-left:2.5%;
 }
 
 #containerSec > #containerMid{
     position:relative;
     width:50%;
-    margin-left:5%;
+    margin-left:2.5%;
     height:100%;
 }
 
 #containerSec > #containerRight{
     position:relative;
     width:20%;
-    margin-left:5%;
+    margin-left:2.5%;
     height:100%;
 }
 
 #containerSec > #containerLeft #pabout{
     font-weight:normal;
-    font-size:1.25em;
-    border-bottom:2px solid black;
-    width:75%;
+    font-size:1.125em;
+    border-bottom:1px solid rgb(196, 198, 200);
     margin:15px auto;
+    color:rgb(133, 136,141);
 }
 
 #containerSec > #containerLeft #pname{
     font-weight:normal;
     padding:5px;
-    border:1px solid black;
-    width:60%;
+    width:65%;
+    font-size:0.8em;
     margin:15px auto;
+    color:rgb(133, 136,141);
+    border:1px solid rgb(133, 136, 141);
 }
 
 .body{
@@ -280,10 +282,24 @@ li span{
 
 #containerRight > p{
     font-style:italic;
-    font-size:1.25em;
-    margin-top:5px;
-    width:75%;
-    border-bottom:2px solid black;
+    font-size:1.125em;
+    margin:5px auto;
+    color:rgb(133, 136,141);
+    border-bottom:1px solid rgb(133, 136,141);
     padding-bottom:4px;
-    margin:auto;
+
+}
+
+#pintro {
+    position:absolute;
+    background-color:white;
+    width:450px;
+    right:100px;
+    top:675px;
+}
+
+#pintro > p{
+    position:relative;
+    padding:10px;
+    text-align:center;
 }
