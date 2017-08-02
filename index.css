@@ -97,7 +97,7 @@ footer{
     position:relative;
     margin-top:40px;
     text-align:center;
-    border:2px solid black;
+    border:2px solid rgba(0, 0, 0, 0.71);
     border-left:0;
     border-right:0;
     z-index:3;
@@ -127,12 +127,12 @@ footer{
     border-bottom-right-radius: 10px;
     border-bottom-left-radius:10px;
     font-family: myAvenir;
+    z-index:5;
 }
 
 #containerSec > #fixed > ul > li > ul > li{
     position:relative;
     line-height:40px;
-    z-index:2;
     display:none;
     text-align:left;
 }
@@ -229,7 +229,22 @@ li span{
     width:20%;
     margin-left:5%;
     height:100%;
+}
 
+#containerSec > #containerLeft #pabout{
+    font-weight:normal;
+    font-size:1.25em;
+    border-bottom:2px solid black;
+    width:75%;
+    margin:15px auto;
+}
+
+#containerSec > #containerLeft #pname{
+    font-weight:normal;
+    padding:5px;
+    border:1px solid black;
+    width:60%;
+    margin:15px auto;
 }
 
 .body{
@@ -240,6 +255,27 @@ li span{
 #containerSec > #containerMid > img{
     position:absolute;
     left:0;
+}
+
+#containerLeft > p{
+    margin-top:20px;
+    font-weight:bold;
+}
+
+#containerLeft > p > a{
+    position:relative;
+    font-style:italic;
+    text-decoration:none;
+    left:15px;
+    color:black;
+}
+
+#containerLeft > ul{
+    margin-top:10px;
+}
+
+#containerLeft > ul > li{
+    display:inline-block;
 }
 
 #containerRight > p{
