@@ -92,7 +92,7 @@ footer{
     top:25px;
 }
 
-#containerSec > #fixed > ul{
+#containerSec > #fixed > ul:not(.icons){
     padding:2px 0;
     position:relative;
     margin-top:40px;
@@ -103,7 +103,7 @@ footer{
     z-index:3;
 }
 
-#containerSec > #fixed > ul > li{
+#containerSec > #fixed > ul:not(.icons) > li{
     position:relative;
     display:inline-block;
     border-radius:5px;
@@ -112,15 +112,14 @@ footer{
     margin:0 2%;
 }
 
-#containerSec > #fixed > ul > li > a{
+#containerSec > #fixed > ul:not(.icons) > li > a{
     text-decoration: none;
     display:block;
     color:black;
 }
 
-#containerSec > #fixed > ul > li > ul{
+#containerSec > #fixed > ul:not(.icons) > li > ul{
     position:absolute;
-    margin-top:-1px;
     list-style-type:none;
     width:97%;
     left:1.5%;
@@ -130,28 +129,26 @@ footer{
     z-index:5;
 }
 
-#containerSec > #fixed > ul > li > ul > li{
+#containerSec > #fixed > ul:not(.icons) > li > ul > li{
     position:relative;
     line-height:40px;
     display:none;
     text-align:left;
+    border-top:0.1em solid white;
 }
 
-#containerSec > #fixed > ul > li > ul > li > a{
+#containerSec > #fixed > ul:not(.icons) > li > ul > li > a{
     text-decoration:none;
     color:black;
     padding-left:30px;
     font-size:0.9em;
     display:block;
-
-
 }
-
-#containerSec > #fixed > ul > li:hover > ul > li{
+#containerSec > #fixed > ul:not(.icons) > li:hover > ul > li{
     display:block;
 }
 
-#containerSec > #fixed > ul > li > ul > li:hover > a{
+#containerSec > #fixed > ul:not(.icons) > li > ul > li:hover > a{
     padding-left:40px;
 }
 
@@ -168,7 +165,7 @@ li span{
 }
 
 #i1{
-    background-color:rgba(249, 220, 236, 0.9);
+    background-color:rgba(249, 220, 236, 0.95);
 }
 
 #l2{
@@ -176,7 +173,7 @@ li span{
 }
 
 #i2{
-    background-color:rgba(249, 221, 252, 0.9);
+    background-color:rgba(249, 221, 252, 0.95);
 }
 #l3{
     background-color:rgb(215, 252, 248);
@@ -185,30 +182,40 @@ li span{
     background-color:rgb(205, 249, 212);
 }
 #i4{
-    background-color:rgba(205, 249, 212, 0.9);
+    background-color:rgba(205, 249, 212, 0.95);
 }
 #l5{
     background-color:rgb(254, 242, 215);
 }
 
 #i5{
-    background-color:rgba(254, 242, 215, 0.9);
+    background-color:rgba(254, 242, 215, 0.95);
 }
 
-#containerSec > #fixed > ul > li > #i1 a:hover{
+#containerSec > #fixed > ul:not(.icons) > li > #i1 a:hover{
     background-color:rgba(249, 220, 236, 1);
 }
 
-#containerSec > #fixed > ul > li > #i2 a:hover{
+#containerSec > #fixed > ul:not(.icons) > li > #i2 a:hover{
     background-color:rgba(249, 221, 252, 1);
 }
 
-#containerSec > #fixed > ul > li > #i4 a:hover{
+#containerSec > #fixed > ul:not(.icons) > li > #i4 a:hover{
     background-color:rgba(205, 249, 212, 1);
 }
 
-#containerSec > #fixed > ul > li > #i5 a:hover{
+#containerSec > #fixed > ul:not(.icons) > li > #i5 a:hover{
     background-color:rgba(254, 242, 215, 1);
+}
+
+.icons{
+    margin-top:5px;
+    text-align:left;
+    margin-left:2%;
+}
+.icons > li{
+    display:inline-block;
+    margin:0 3px;
 }
 
 #containerSec > #containerLeft{
@@ -221,14 +228,12 @@ li span{
     position:relative;
     width:50%;
     margin-left:2.5%;
-    height:100%;
 }
 
 #containerSec > #containerRight{
     position:relative;
     width:20%;
     margin-left:2.5%;
-    height:100%;
 }
 
 #containerSec > #containerLeft #pabout{
@@ -251,7 +256,7 @@ li span{
 
 .body{
     float:left;
-    margin-top:175px;
+    margin:175px 0 50px 0;
 }
 
 #containerSec > #containerMid > img{
@@ -264,12 +269,17 @@ li span{
     font-weight:bold;
 }
 
-#containerLeft > p > a{
+#containerLeft > p > a:not(#inner){
     position:relative;
     font-style:italic;
     text-decoration:none;
     left:15px;
     color:black;
+}
+
+#inner{
+    position:relative;
+    left:5px;
 }
 
 #containerLeft > ul{
@@ -302,4 +312,64 @@ li span{
     position:relative;
     padding:10px;
     text-align:center;
+}
+
+#root{
+    position:relative;
+    width:90%;
+    clear:both;
+    border-top: 0.2em solid black;
+    margin:auto;
+    padding-bottom:20px;
+}
+
+.logon1{
+    position:relative;
+    background: url("logo2.jpg") center;
+    width:81px;
+    height:75px;
+    background-size:81px 75px;
+    margin:15px auto;
+}
+
+#containerSec #root > ul{
+    list-style: none;
+}
+
+#root > ul > li{
+    display:inline-block;
+}
+
+.left{
+    position:absolute;
+    left:1%;
+}
+
+.left > ul{
+    list-style:none;
+}
+
+.left > ul > li{
+    display:inline-block;
+    margin:0 8px;
+}
+
+.left > ul > li > a{
+    text-decoration:none;
+    color:black;
+    display:block;
+}
+
+#centered{
+    width:450px;
+    position:absolute;
+    margin:auto;
+    left:0;
+    right:0;
+}
+
+#root .icons{
+    position:absolute;
+    right:1%;
+    bottom:20px;
 }
