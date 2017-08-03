@@ -92,6 +92,19 @@ footer{
     top:25px;
 }
 
+#containerSec form{
+    position:absolute;
+    top:70px;
+    right:1%;
+}
+
+form > input{
+    width:150px;
+    font-style:italic;
+    border:1px solid black;
+    color:rgb(196, 198, 200);
+    padding:5px;
+}
 #containerSec > #fixed > ul:not(.icons){
     padding:2px 0;
     position:relative;
@@ -211,7 +224,7 @@ li span{
 .icons{
     margin-top:5px;
     text-align:left;
-    margin-left:2%;
+    margin-left:2.5%;
 }
 .icons > li{
     display:inline-block;
