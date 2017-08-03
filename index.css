@@ -95,23 +95,28 @@ footer{
 
 #containerSec form{
     position:absolute;
-    top:70px;
+    top:65px;
     right:1%;
 }
 
 form > input{
     width:150px;
     font-style:italic;
-    border:1px solid black;
+    border:1px solid rgb(196, 198, 200);
     color:rgb(196, 198, 200);
     padding:5px;
+    font-family: myDidot;
+}
+
+form > input:hover{
+    border-color:black;
 }
 #containerSec > #fixed > ul:not(.icons){
     padding:2px 0;
     position:relative;
     margin-top:40px;
     text-align:center;
-    border:2px solid rgba(0, 0, 0, 0.71);
+    border:1px solid black;
     border-left:0;
     border-right:0;
     z-index:3;
