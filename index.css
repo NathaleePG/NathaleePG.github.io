@@ -63,12 +63,11 @@ footer{
     position:absolute;
     background-color:white;
     text-align:center;
-    display:none;
 }
 
 #containerSec > #fixed{
     position:fixed;
-    background-color:white;
+    background-color: #ffffff;
     width:100%;
     z-index:3;
 }
@@ -240,19 +239,18 @@ li span{
 #containerSec > #containerLeft{
     position:relative;
     width:20%;
-    margin-left:2.5%;
 }
 
 #containerSec > #containerMid{
     position:relative;
     width:50%;
-    margin-left:2.5%;
+    height:774px;
+    background:url("natmain.jpg") center;
 }
 
 #containerSec > #containerRight{
     position:relative;
     width:20%;
-    margin-left:2.5%;
 }
 
 #containerSec > #containerLeft #pabout{
@@ -274,8 +272,9 @@ li span{
 }
 
 .body{
+    position:relative;
     float:left;
-    margin:175px 0 50px 0;
+    margin:175px 0 50px 2.5%;
 }
 
 #containerSec > #containerMid > img{
@@ -391,4 +390,101 @@ li span{
     position:absolute;
     right:1%;
     bottom:20px;
+}
+
+@media screen and (max-width:1195px){
+    .body{
+        margin-top:200px;
+    }
+}
+
+@media screen and (max-width:1300px){
+
+    #containerSec > #containerLeft{
+        width:37%;
+    }
+
+    #containerSec > #containerMid{
+        margin-left:3%;
+    }
+
+    #containerSec > #containerRight{
+        width:33.3%;
+        margin-left:33.3%;
+        margin-top:4%;
+    }
+}
+
+@media screen and (max-width:900px){
+    #containerSec #pintro{
+        width:300px;
+    }
+    #root #centered{
+        position:relative;
+        width:100%;
+        margin:15px 0;
+    }
+
+    #root .left{
+        position:relative;
+        width:100%;
+    }
+
+    #root .icons{
+        position:relative;
+        width:100%;
+        bottom:0;
+    }
+}
+
+@media screen and (max-width:703px){
+    #containerSec #pintro{
+        top:1000px;
+        right:8%;
+    }
+}
+
+@media screen and (max-width:575px) {
+    #containerSec > #containerLeft {
+        width: 75%;
+        margin-left: 12.5%;
+        margin-bottom: 4%;
+        margin-top:250px;
+    }
+
+    #containerSec > #containerMid {
+        width: 90%;
+        margin-left: 5%;
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+
+    #containerSec > #containerRight {
+        width: 75%;
+        margin-left: 12.5%;
+    }
+
+    #containerSec #pintro {
+        position: relative;
+        top: 0;
+        right: 0;
+        width: 90%;
+        margin: auto;
+        clear: both;
+    }
+
+    #containerSec form{
+        display:none;
+    }
+}
+
+@media screen and (max-width:425px){
+    #containerSec > #containerLeft{
+        margin-top:275px;
+        width:98%;
+        margin-left:1%;
+    }
+    #containerSec > #fixed > .icons{
+        text-align:center;
+    }
 }
