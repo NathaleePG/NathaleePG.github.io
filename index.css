@@ -30,11 +30,10 @@ body{
 }
 header{
     position:relative;
-    padding-top:225px;
     text-align:center;
     color:white;
     font-size:4em;
-    margin:auto;
+    margin:15% auto 0 auto;
 }
 
 #containerMain > img{
