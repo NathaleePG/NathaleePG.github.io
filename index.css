@@ -143,7 +143,7 @@ form > input:hover{
     left:1.5%;
     border-bottom-right-radius: 10px;
     border-bottom-left-radius:10px;
-    font-family: myAvenir;
+    font-family: myAvenir, myDidot;
     z-index:5;
 }
 
@@ -234,6 +234,10 @@ li span{
 .icons > li{
     display:inline-block;
     margin:0 3px;
+}
+
+.resize{
+    height:18px;
 }
 
 #containerSec > #containerLeft{
