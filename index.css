@@ -62,6 +62,7 @@ footer{
     position:absolute;
     background-color:white;
     text-align:center;
+    display:none;
 }
 
 #containerSec > #fixed{
@@ -343,14 +344,23 @@ li span{
     text-align:center;
 }
 
+#border{
+    position:relative;
+    clear:both;
+    width:90%;
+    height:20px;
+    border-bottom:4px solid black;
+    margin: 0 auto 50px auto;
+}
+
 #m1{
     position:relative;
+    padding-top:1px;
     clear:both;
     width:100%;
     background:url("mainpic1.jpg") center;
     height:846px;
     margin-bottom:2%;
-    overflow:hidden;
 }
 
 #m1 > p.head{
