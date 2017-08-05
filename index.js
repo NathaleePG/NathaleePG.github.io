@@ -8,7 +8,11 @@ $(function() {
     var $logo = $("#containerMain > img");
     var $footer = $("footer");
     var $secCon = $("#containerSec");
-    var $nav = $("#containerSec > ul > li");
+    var $nav = $("#containerSec > #fixed > ul > li");
+    var $bar = $("#containerSec > #fixed > ul");
+    var $button = $("#toggle");
+    var $body = $(".body");
+    var $fixed = $("#containerSec > #fixed");
     $conMain.delay(200).fadeIn(1000);
     $header.hide().delay(1200).fadeIn(1500);
     $logo.hide().delay(3000).fadeIn(1250);
@@ -18,6 +22,19 @@ $(function() {
         $conMain.fadeOut(1500);
         $secCon.delay(1500).fadeIn(1500);
     });
+
+    $button.on("click", function(){
+        $bar.toggle();
+        if($bar.css("display") === "none"){
+            $button.css("opacity", 1);
+            $fixed.css("border-bottom", "2px solid black");
+        } else{
+            $button.css("opacity", 0.25);
+            $fixed.css("border-bottom", "0");
+
+        }
+    });
+
     /*
     $nav.on("mouseover", function(){
         var i = $(this).index();
