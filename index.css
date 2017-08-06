@@ -370,13 +370,14 @@ li span{
     min-width:250px;
     font-size:2.8em;
     text-align:center;
-    margin:475px auto 0 auto;
+    margin:470px auto 0 auto;
     background-color: rgba(255, 255, 255, 0.6);
 }
 
 #m1 > a{
     position:relative;
     color:black;
+    font-family:myAvenir;
     text-decoration:none;
     background-color: rgba(255, 255, 255, 0.6);
     font-size:1.25em;
