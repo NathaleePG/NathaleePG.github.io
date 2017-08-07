@@ -153,6 +153,8 @@ form > input:hover{
     border-bottom-left-radius:10px;
     font-family: myAvenir, myDidot;
     z-index:5;
+    padding-top:5px;
+    display:none;
 }
 
 #containerSec > #fixed > ul:not(.icons) > li > ul > li{
@@ -168,6 +170,10 @@ form > input:hover{
     color:black;
     padding-left:30px;
     font-size:0.9em;
+    display:block;
+}
+
+#containerSec > #fixed > ul:not(.icons) > li:hover > ul{
     display:block;
 }
 #containerSec > #fixed > ul:not(.icons) > li:hover > ul > li{
@@ -219,19 +225,19 @@ li span{
 }
 
 #containerSec > #fixed > ul:not(.icons) > li > #i1 a:hover{
-    background-color:rgba(249, 220, 236, 1);
+    background-color:rgba(254, 225, 241, 1);
 }
 
 #containerSec > #fixed > ul:not(.icons) > li > #i2 a:hover{
-    background-color:rgba(249, 221, 252, 1);
+    background-color:rgba(254, 226, 257, 1);
 }
 
 #containerSec > #fixed > ul:not(.icons) > li > #i4 a:hover{
-    background-color:rgba(205, 249, 212, 1);
+    background-color:rgba(210, 254, 217, 1);
 }
 
 #containerSec > #fixed > ul:not(.icons) > li > #i5 a:hover{
-    background-color:rgba(254, 242, 215, 1);
+    background-color:rgba(259, 247, 220, 1);
 }
 
 .icons{
@@ -349,7 +355,7 @@ li span{
     clear:both;
     width:90%;
     height:20px;
-    border-bottom:4px solid black;
+    border-bottom:0.2em dashed black;
     margin: 0 auto 50px auto;
 }
 
@@ -497,19 +503,25 @@ li span{
     }
 }
 
-@media screen and (max-width:703px){
-    #containerSec #pintro{
-        top:1000px;
-        right:8%;
+@media screen and (max-width:703px) {
+    #containerSec #pintro {
+        top: 1000px;
+        right: 8%;
+    }
+
+    #containerSec #fixed > ul {
+        display:none;
+    }
+    #toggle{
+        opacity:0.9;
     }
 }
-
 @media screen and (max-width:575px) {
     #containerSec > #containerLeft {
         width: 75%;
         margin-left: 12.5%;
         margin-bottom: 4%;
-        margin-top:250px;
+        margin-top:200px;
     }
 
     #containerSec > #containerMid {
@@ -546,7 +558,7 @@ li span{
 }
 @media screen and (max-width:425px){
     #containerSec > #containerLeft{
-        margin-top:275px;
+        margin-top:200px;
         width:98%;
         margin-left:1%;
     }

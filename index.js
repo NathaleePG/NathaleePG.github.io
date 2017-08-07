@@ -26,8 +26,8 @@ $(function() {
     $button.on("click", function(){
         $bar.toggle();
         if($bar.css("display") === "none"){
-            $button.css("opacity", 1);
-            $fixed.css("border-bottom", "2px solid black");
+            $button.css("opacity", 0.9);
+            $fixed.css("border-bottom", "1px solid black");
         } else{
             $button.css("opacity", 0.25);
             $fixed.css("border-bottom", "0");
