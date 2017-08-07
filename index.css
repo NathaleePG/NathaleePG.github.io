@@ -555,6 +555,11 @@ li span{
     #containerSec #logon1{
         right:0;
     }
+    #containerSec #fixed > ul:not(.icons) > li{
+        margin-bottom:3px;
+        margin-top:3px;
+        line-height:30px;
+    }
 }
 @media screen and (max-width:425px){
     #containerSec > #containerLeft{
