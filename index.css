@@ -252,11 +252,11 @@ li span{
 }
 .icons > li{
     display:inline-block;
-    margin:0 3px;
+    margin:0 6px;
 }
 
 .resize{
-    height:18px;
+    height:14px;
 }
 
 #containerSec > #containerLeft{
