@@ -23,46 +23,10 @@ body{
     width:100%;
 }
 
-#containerMain{
-    position:absolute;
-    background-color: rgb(249, 220, 236);
-    display:none;
-}
-header{
-    position:relative;
-    text-align:center;
-    color:white;
-    font-size:4em;
-    margin:15% auto 0 auto;
-}
-
-#containerMain > img{
-    position:relative;
-    display:block;
-    width:162px;
-    margin:auto;
-    border-radius:50px;
-    opacity:0.8;
-}
-
-#containerMain > img:hover{
-    opacity:1;
-}
-
-footer{
-    position:relative;
-    font-size: 1.25em;
-    color:white;
-    margin-top:25px;
-    text-align:center;
-    font-style:italic;
-}
-
 #containerSec{
     position:absolute;
     background-color:white;
     text-align:center;
-    display:none;
 }
 
 #containerSec > #fixed{
@@ -181,6 +145,7 @@ form > input:hover{
 #containerSec > #fixed > ul:not(.icons) > li:hover > ul{
     display:block;
 }
+
 #containerSec > #fixed > ul:not(.icons) > li:hover > ul > li{
     display:block;
 }
@@ -259,150 +224,22 @@ li span{
     height:14px;
 }
 
-#containerSec > #containerLeft{
+#container1{
     position:relative;
-    width:20%;
+    margin:200px auto 100px auto;
 }
 
-#containerSec > #containerMid{
-    position:relative;
-    width:50%;
-    height:774px;
-    background:url("natmain.jpg") center;
+#first{
+    font-size:2.25em;
 }
 
-#containerSec > #containerRight{
-    position:relative;
-    width:20%;
+.second{
+    text-decoration:underline;
 }
 
-#containerSec > #containerLeft #pabout{
-    font-weight:normal;
-    font-size:1.125em;
-    border-bottom:1px solid rgb(196, 198, 200);
-    margin:15px auto;
-    color:rgb(133, 136,141);
-}
-
-#containerSec > #containerLeft #pname{
-    font-weight:normal;
-    padding:5px;
-    width:65%;
-    font-size:0.8em;
-    margin:15px auto;
-    color:rgb(133, 136,141);
-    border:1px solid rgb(133, 136, 141);
-}
-
-.body{
-    position:relative;
-    float:left;
-    margin:175px 0 50px 2.5%;
-}
-
-#containerSec > #containerMid > img{
-    position:absolute;
-    left:0;
-}
-
-#containerLeft > p{
-    margin-top:20px;
-    font-weight:bold;
-}
-
-#containerLeft > p > a:not(#inner){
-    position:relative;
+#me{
     font-style:italic;
-    text-decoration:none;
-    left:15px;
-    color:black;
 }
-
-#inner{
-    position:relative;
-    left:5px;
-}
-
-#containerLeft > ul{
-    margin-top:10px;
-}
-
-#containerLeft > ul > li{
-    display:inline-block;
-}
-
-#containerRight > p{
-    font-style:italic;
-    font-size:1.125em;
-    margin:5px auto;
-    color:rgb(133, 136,141);
-    border-bottom:1px solid rgb(133, 136,141);
-    padding-bottom:4px;
-
-}
-
-#pintro {
-    position:absolute;
-    background-color:white;
-    width:450px;
-    right:100px;
-    top:675px;
-}
-
-#pintro > p{
-    position:relative;
-    padding:10px;
-    text-align:center;
-}
-
-#border{
-    position:relative;
-    clear:both;
-    width:90%;
-    height:20px;
-    border-bottom:0.2em dashed black;
-    margin: 0 auto 50px auto;
-}
-
-#m1{
-    position:relative;
-    padding-top:1px;
-    clear:both;
-    width:100%;
-    background:url("mainpic1.jpg") center;
-    height:1100px;
-    margin-bottom:2%;
-}
-
-#m1 > p.head{
-    position:relative;
-    width:45%;
-    padding:30px 20px 30px 20px;
-    min-width:250px;
-    font-size:2.8em;
-    text-align:center;
-    margin:470px auto 0 auto;
-    background-color: rgba(255, 255, 255, 0.6);
-}
-
-#m1 > a{
-    position:relative;
-    color:black;
-    font-family:myAvenir;
-    text-decoration:none;
-    background-color: rgba(255, 255, 255, 0.6);
-    font-size:1.25em;
-    margin:3% auto;
-    display:block;
-    width:200px;
-    padding:10px;
-    border: 1px solid rgb(133, 136, 141);
-}
-
-#m1 > a:hover{
-    background-color: rgba(255, 255, 255, 0.7);
-}
-
 #root{
     position:relative;
     width:90%;
@@ -463,33 +300,7 @@ li span{
     bottom:20px;
 }
 
-@media screen and (max-width:1195px){
-    .body{
-        margin-top:200px;
-    }
-}
-
-@media screen and (max-width:1300px){
-
-    #containerSec > #containerLeft{
-        width:37%;
-    }
-
-    #containerSec > #containerMid{
-        margin-left:3%;
-    }
-
-    #containerSec > #containerRight{
-        width:33.3%;
-        margin-left:33.3%;
-        margin-top:4%;
-    }
-}
-
 @media screen and (max-width:900px){
-    #containerSec #pintro{
-        width:300px;
-    }
     #root #centered{
         position:relative;
         width:100%;
@@ -508,12 +319,11 @@ li span{
     }
 }
 
-@media screen and (max-width:703px) {
-    #containerSec #pintro {
-        top: 1000px;
-        right: 8%;
-    }
+#centered p{
+    font-weight:bold;
+}
 
+@media screen and (max-width:703px) {
     #containerSec #fixed > ul {
         display:none;
     }
@@ -521,40 +331,12 @@ li span{
         opacity:0.9;
     }
 }
+
 @media screen and (max-width:575px) {
-    #containerSec > #containerLeft {
-        width: 75%;
-        margin-left: 12.5%;
-        margin-bottom: 4%;
-        margin-top:200px;
-    }
-
-    #containerSec > #containerMid {
-        width: 90%;
-        margin-left: 5%;
-        margin-bottom: 0;
-        margin-top: 0;
-    }
-
-    #containerSec > #containerRight {
-        width: 75%;
-        margin-left: 12.5%;
-    }
-
-    #containerSec #pintro {
-        position: relative;
-        top: 0;
-        right: 0;
-        width: 95%;
-        margin: auto;
-        clear: both;
-    }
-
     #containerSec form{
         display:none;
     }
 }
-
 
 @media screen and (max-width:500px){
     #containerSec #logon1{
@@ -566,12 +348,8 @@ li span{
         line-height:30px;
     }
 }
+
 @media screen and (max-width:425px){
-    #containerSec > #containerLeft{
-        margin-top:200px;
-        width:98%;
-        margin-left:1%;
-    }
     #containerSec > #fixed > .icons{
         text-align:center;
     }
