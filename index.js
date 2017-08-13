@@ -31,9 +31,67 @@ $(function() {
         } else{
             $button.css("opacity", 0.25);
             $fixed.css("border-bottom", "0");
-
         }
     });
+
+    var $icons = $(".icons li");
+
+    $icons.on("mouseover", function(){
+        $(this).stop(true);
+        $(this).animate({
+            opacity:1
+        }, 300);
+    });
+
+    $icons.mouseleave(function(){
+        $(this).animate({
+            opacity:0.6
+        }, 200);
+    });
+
+
+
+
+
+
+
+
+
+    /**
+    var $fb = $("#fb");
+    var $pin = $("#pin");
+    var $ig = $("#ig");
+
+    $fb.mouseenter(function(){
+        $(this).find(".resize").css("display", "none");
+        $(this).append("<img src='icon6.png' class='abs'>");
+    });
+    $fb.mouseleave(function(){
+        $(this).find(".abs").remove();
+        $(this).find(".resize").css("display", "block");
+
+    });
+
+    $pin.mouseenter(function(){
+        $(this).find(".resize").css("display", "none");
+        $(this).append("<img src='icon3.png' class='abs'>");
+    });
+    $pin.mouseleave(function(){
+        $(this).find(".abs").remove();
+        $(this).find(".resize").css("display", "block");
+
+    });
+
+    $ig.mouseenter(function(){
+        $(this).find(".resize").css("display", "none");
+        $(this).append("<img src='icon5.png' class='abs'>");
+    });
+    $ig.mouseleave(function(){
+        $(this).find(".abs").remove();
+        $(this).find(".resize").css("display", "block");
+
+    });
+    */
 
     /*
     $nav.on("mouseover", function(){

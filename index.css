@@ -254,8 +254,10 @@ li span{
     display:inline-block;
     margin:0 6px;
 }
-
 .resize{
+    height:15px;
+}
+.abs{
     height:14px;
 }
 
@@ -466,8 +468,13 @@ li span{
     bottom:20px;
 }
 
+.icons li{
+    opacity:0.6;
+}
+
 #centered p{
-    font-weight:bold;
+    display:inline;
+    font-size:0.9em;
 }
 
 @media screen and (max-width:1195px){
