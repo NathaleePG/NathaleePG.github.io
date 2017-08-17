@@ -62,7 +62,7 @@ $(function() {
 
     function onResize(){
         var target = $('#m1').offset();
-        if ($(window).scrollTop() > (target["top"] - 300)){
+        if ($(window).scrollTop() > (target["top"] - 300) && $(window).scrollTop() > 200){
             $("#m1").animate({
                 opacity:1
             },3000)
