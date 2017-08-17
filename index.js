@@ -65,7 +65,7 @@ $(function() {
         if ($(window).scrollTop() > (target["top"] - 300) && $(window).scrollTop() > 200){
             $("#m1").animate({
                 opacity:1
-            },3000)
+            },3000).clearQueue(true);
         }
     }
     $(window).on("scroll", function(){
