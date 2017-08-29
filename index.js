@@ -4,7 +4,7 @@
 
 $(function() {
     var $conMain = $("#containerMain");
-    var $header = $("header");
+    var $header = $("header span");
     var $logo = $("#containerMain > img");
     var $footer = $("footer");
     var $secCon = $("#containerSec");
@@ -14,7 +14,9 @@ $(function() {
     var $body = $(".body");
     var $fixed = $("#containerSec > #fixed");
     $conMain.delay(200).fadeIn(1000);
-    $header.hide().delay(1200).fadeIn(1500);
+    $header.delay(1200).each(function(){
+        $(this).delay(100*($(this).index() + 1)).animate({opacity:1}, 300);
+    });
     $logo.hide().delay(3000).fadeIn(1250);
     $footer.hide().delay(4800).fadeIn(1250);
 

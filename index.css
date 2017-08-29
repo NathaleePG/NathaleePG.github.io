@@ -36,24 +36,29 @@ header{
     margin:15% auto 0 auto;
 }
 
+#containerMain > header > span{
+    opacity:0;
+}
+
 #containerMain > img{
     position:relative;
     display:block;
     width:162px;
-    margin:auto;
+    margin:0 auto 25px auto;
     border-radius:50px;
     opacity:0.8;
 }
 
 #containerMain > img:hover{
     opacity:1;
+    width:172px;
+    margin-bottom:16px;
 }
 
 footer{
     position:relative;
     font-size: 1.25em;
     color:white;
-    margin-top:25px;
     text-align:center;
     font-style:italic;
 }
