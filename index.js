@@ -70,13 +70,42 @@ $(function() {
             },3000).clearQueue(true);
         }
     }
-    $(window).on("scroll", function(){
-        onResize();
-    });
 
     onResize();
 
+    function recurse(item){
+        item.children().delay(300).each(function(){
+            $(this).delay(200 * ($(this).index() +1)).animate(
+                {opacity:1}, 500, function(){
+                    recurse($(this));
+                });
+        })
+    }
 
+    function categoriesOnResize(){
+        var target = $('#categories').offset();
+        if ($(window).scrollTop() > (target["top"] - 300) && $(window).scrollTop() > 100) {
+            $('#categories').animate({
+                opacity: 1
+            }, 500).clearQueue(true);
+            $("#categories span").delay(500).each(function () {
+                $(this).delay(100 * ($(this).index() + 1)).animate({opacity: 1}, 300);
+            })
+            $("#categories #sub").delay(1800).animate({
+                opacity:1
+            }, 500);
+            $("#categories li").delay(2100).each(function(){
+                $(this).delay(500 * ($(this).index() +1)).animate({opacity:1}, 500);
+            })
+        }
+    }
+
+    categoriesOnResize();
+
+    $(window).on("scroll", function(){
+        onResize();
+        categoriesOnResize();
+    });
 
 
 
@@ -87,40 +116,34 @@ $(function() {
 
 
     /**
-    var $fb = $("#fb");
-    var $pin = $("#pin");
-    var $ig = $("#ig");
-
-    $fb.mouseenter(function(){
+     var $fb = $("#fb");
+     var $pin = $("#pin");
+     var $ig = $("#ig");
+     $fb.mouseenter(function(){
         $(this).find(".resize").css("display", "none");
         $(this).append("<img src='icon6.png' class='abs'>");
     });
-    $fb.mouseleave(function(){
+     $fb.mouseleave(function(){
         $(this).find(".abs").remove();
         $(this).find(".resize").css("display", "block");
-
     });
-
-    $pin.mouseenter(function(){
+     $pin.mouseenter(function(){
         $(this).find(".resize").css("display", "none");
         $(this).append("<img src='icon3.png' class='abs'>");
     });
-    $pin.mouseleave(function(){
+     $pin.mouseleave(function(){
         $(this).find(".abs").remove();
         $(this).find(".resize").css("display", "block");
-
     });
-
-    $ig.mouseenter(function(){
+     $ig.mouseenter(function(){
         $(this).find(".resize").css("display", "none");
         $(this).append("<img src='icon5.png' class='abs'>");
     });
-    $ig.mouseleave(function(){
+     $ig.mouseleave(function(){
         $(this).find(".abs").remove();
         $(this).find(".resize").css("display", "block");
-
     });
-    */
+     */
 
     /*
     $nav.on("mouseover", function(){
@@ -133,7 +156,6 @@ $(function() {
             counter += 1;
         })
     });
-
     $nav.mouseleave(function(){
         $nav.each(function(){
             $(this).css("opacity", 1);
