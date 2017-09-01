@@ -62,14 +62,55 @@ $(function() {
         }
     });
 
+    var mList = [$("#m1"), $("#m2")];
+    var mCounter = 0;
     function onResize(){
-        var target = $('#m1').offset();
+        var target = mList[mCounter].offset();
         if ($(window).scrollTop() > (target["top"] - 300) && $(window).scrollTop() > 200){
             $("#m1").animate({
                 opacity:1
             },3000).clearQueue(true);
         }
     }
+
+    $(".rightArrow").on("click", function(){
+        mList[mCounter].animate({opacity:0}, 500);
+        mList[mCounter].css("display", "none");
+        if(mCounter === (mList.length - 1)){
+            mCounter = 0;
+            $(".leftArrow").css("display", "none");
+        }else{
+            mCounter+=1;
+            $(".leftArrow").css("display", "block");
+        }
+        if(mCounter === (mList.length - 1)){
+            $(".rightArrow").css("display", "none");
+        }else{
+            $(".rightArrow").css("display", "block");
+        }
+        mList[mCounter].animate({opacity:1}, 500);
+        mList[mCounter].css("display", "block");
+    });
+    $(".leftArrow").on("click", function(){
+        mList[mCounter].animate({opacity:0}, 500);
+        mList[mCounter].css("display", "none");
+        if((mCounter - 1) < 0){
+            mCounter = mList.length - 1;
+        }else{
+            mCounter -= 1;
+            $(".leftArrow").css("display", "block");
+        }
+        if(mCounter === 0){
+            $(".leftArrow").css("display", "none");
+        }
+        if(mCounter === (mList.length - 1)){
+            $(".rightArrow").css("display", "none");
+        }else{
+            $(".rightArrow").css("display", "block");
+        }
+        mList[mCounter].animate({opacity:1}, 500);
+        mList[mCounter].css("display", "block");
+    });
 
     onResize();
 

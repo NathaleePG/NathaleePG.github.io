@@ -356,7 +356,6 @@ li span{
     width:450px;
     right:100px;
     top:675px;
-    line-height:30px;
 }
 
 #pintro > p{
@@ -376,7 +375,6 @@ li span{
     position:relative;
     clear:both;
     width:100%;
-    margin-bottom:100px;
     background-color: rgba(241, 143, 158, 0.1);
 }
 #categories, #categories span, #categories li, #sub{
@@ -467,28 +465,6 @@ li span{
     margin-top:11px;
 }
 
-@media screen and (max-width:1100px){
-    #first{
-        position:relative;
-    }
-
-    #second{
-        position:relative;
-    }
-
-    #third{
-        position:relative;
-    }
-}
-
-@media screen and (max-width:800px){
-    #categories > ul{
-        margin-left:0;
-        width:100%;
-        margin-top:100px;
-    }
-}
-
 
 #c1{
     background:url("c1.jpg") center;
@@ -501,20 +477,38 @@ li span{
 #c3{
     background:url("c3.jpg") center;
 }
-
-
-#m1{
+#main{
     position:relative;
-    padding-top:1px;
-    clear:both;
-    width:100%;
-    background:url("mainpic1.jpg") center;
     height:1100px;
+    width:100%;
+    clear:both;
     margin-bottom:100px;
+}
+.containers{
+    position:absolute;
+    padding-top:1px;
+    width:100%;
+    height:100%;
     opacity:0;
 }
 
-#m1 > p.head{
+#m1{
+    background:url("mainpic1.jpg") center;
+}
+
+#m2{
+    background:url("mainpic3.jpg") center;
+    display:none;
+}
+
+p.mhead{
+    position:absolute;
+    font-size:2.8em;
+    padding:15px 60px 15px 60px;
+    background-color:white;
+    top:4.5%;
+}
+p.head{
     position:relative;
     width:45%;
     padding:30px 20px 30px 20px;
@@ -525,7 +519,25 @@ li span{
     background-color: rgba(255, 255, 255, 0.6);
 }
 
-#m1 > a{
+p.rightArrow{
+    position:absolute;
+    width:50px;
+    background-color: rgba(255, 255, 255, 0.91);
+    top:550px;
+    right:0;
+    font-weight:bold;
+}
+
+p.leftArrow{
+    position:absolute;
+    width:50px;
+    background-color: rgba(255, 255, 255, 0.91);
+    top:550px;
+    left:0;
+    display:none;
+}
+
+a.containerlink{
     position:relative;
     color:black;
     font-family:myAvenir;
@@ -539,7 +551,7 @@ li span{
     border: 1px solid rgb(133, 136, 141);
 }
 
-#m1 > a:hover{
+a.containerlink:hover{
     background-color: rgba(255, 255, 255, 0.7);
 }
 
@@ -635,6 +647,28 @@ li span{
     }
 }
 
+@media screen and (max-width:1100px){
+    #first{
+        position:relative;
+    }
+
+    #second{
+        position:relative;
+    }
+
+    #third{
+        position:relative;
+    }
+}
+
+@media screen and (max-width:800px){
+    #categories > ul{
+        margin-left:0;
+        width:100%;
+        margin-top:100px;
+    }
+}
+
 @media screen and (max-width:900px){
     #containerSec #pintro{
         width:300px;
@@ -702,6 +736,14 @@ li span{
     #containerSec form{
         display:none;
     }
+
+    p.mhead{
+        font-size:2em;
+        width:90%;
+        left:5%;
+        padding-left:0;
+        padding-right:0;
+    }
 }
 
 
@@ -723,5 +765,11 @@ li span{
     }
     #containerSec > #fixed > .icons{
         text-align:center;
+    }
+}
+
+@media screen and (max-width:326px){
+    #containerSec > #categories > ul > li{
+        width:100%;
     }
 }
