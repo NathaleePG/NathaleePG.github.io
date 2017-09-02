@@ -129,9 +129,9 @@ $(function() {
             $("#categories span").delay(500).each(function () {
                 $(this).delay(100 * ($(this).index() + 1)).animate({opacity: 1}, 300);
             })
-            $("#categories #sub").delay(1800).animate({
+            $("#categories #sub").delay(4500).animate({
                 opacity:1
-            }, 500);
+            }, 1000);
             $("#categories li").delay(2100).each(function(){
                 $(this).delay(500 * ($(this).index() +1)).animate({opacity:1}, 500);
             })
