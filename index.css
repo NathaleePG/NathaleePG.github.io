@@ -493,6 +493,7 @@ li span{
 
 #m1{
     background:url("mainpic1.jpg") center;
+    opacity:0;
 }
 
 #m2{
