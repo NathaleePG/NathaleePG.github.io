@@ -67,7 +67,6 @@ footer{
     position:absolute;
     background-color:white;
     text-align:center;
-    display:none;
 }
 
 #containerSec > #fixed{
@@ -340,6 +339,14 @@ li span{
     display:inline-block;
 }
 
+#containerLeft > ul > li > img{
+    box-shadow:0 0 5px 0 rgba(245, 245, 245, 0.51);
+}
+
+#containerLeft > ul > li >img:hover{
+    box-shadow:0 0 5px 0 black;
+}
+
 #containerRight > p{
     font-style:italic;
     font-size:1.125em;
@@ -350,12 +357,23 @@ li span{
 
 }
 
+#containerRight > a{
+    display:block;
+    text-decoration:none;
+    color:rgb(83, 88, 96);
+    margin:35px 0;
+}
+
+#containerRight > a:hover{
+    color:black;
+}
 #pintro {
     position:absolute;
     background-color:white;
     width:450px;
     right:100px;
     top:675px;
+    box-shadow:0 0 10px 0 black;
 }
 
 #pintro > p{
@@ -369,7 +387,7 @@ li span{
     clear:both;
     width:90%;
     height:20px;
-    margin: 0 auto 50px auto;
+    margin: 0 auto 25px auto;
 }
 #categories{
     position:relative;
@@ -568,6 +586,140 @@ a.containerlink:hover{
     background-color: rgba(255, 255, 255, 0.7);
 }
 
+#entries{
+    position:relative;
+    width:800px;
+    margin-bottom:100px;
+}
+
+#head{
+    font-size:2.25em;
+    text-align:left;
+    background-color: rgba(241, 143, 158, 0.1);
+    padding:50px 0 50px 10%;
+    box-shadow:1px 1px 5px 1px black;
+
+}
+
+.entryPic{
+    width:650px;
+    height:650px;
+    margin: 0 auto 15px auto;
+    box-shadow:1px 1px 15px 1px black;
+}
+
+.entryPic:hover{
+    opacity:0.8;
+    box-shadow:1px 1px 3px 1px black;
+}
+
+.s1{
+    font-size:1.5em;
+    margin-top:25px;
+}
+
+.d1{
+    font-size:0.9em;
+    color:gray;
+    margin-bottom:25px;
+}
+
+#e1{
+    background:url("e1.jpg") center;
+}
+#e2{
+    background:url("e2.jpg") center;
+}
+#e3{
+    background:url("e3.jpg") center;
+}
+#e4{
+    background:url("e4.jpg") center;
+}
+
+
+.summary{
+    margin:0 10% 25px 10%;
+}
+#entries > ul > li{
+    position:relative;
+    margin-bottom:50px;
+}
+#entries > ul > li > a{
+    background-color: rgba(241, 143, 158, 0.3);
+    text-decoration: none;
+    color:black;
+    box-shadow:1px 1px 2px 1px black;
+    padding:5px;
+}
+
+#entries > ul > li > a:after{
+    position:absolute;
+    content:"";
+    width:240px;
+    margin-left:25px;
+    margin-top:10px;
+    border-bottom:2px solid rgb(133, 136, 141);
+}
+
+#entries > ul > li > a:before{
+    content:"";
+    position:absolute;
+    width:240px;
+    border-bottom:2px solid rgb(133, 136, 141);
+    margin-top:10px;
+    margin-left:-265px;
+}
+
+#obsessions{
+    width:350px;
+    position:relative;
+    top:75px;
+    margin-left:7%;
+}
+
+.align1{
+    float:left;
+}
+
+#head2{
+    font-size: 1.5em;
+    padding-bottom:10px;
+    width:80%;
+    margin:auto;
+    margin-bottom:25px;
+    border-bottom:2px solid rgb(133, 136, 141);
+}
+
+#o1{
+    position:relative;
+    width:100%;
+    height:300px;
+    background:url("o1.jpg") center;
+    box-shadow:2px 2px 3px 1px rgb(133, 136, 141);
+}
+
+.a1{
+    display:inline-block;
+    text-decoration:none;
+    color:black;
+    background-color: rgba(235, 134, 150, 0.2);
+    padding:20px 25px;
+    margin-top:100px;
+    font-size:1.25em;
+}
+.a2{
+    display:block;
+    color:black;
+    font-size:1.125em;
+    margin-top:15px;
+    font-style:italic;
+}
+
+.a1:hover{
+    box-shadow:1px 1px 10px 1px black;
+}
+
 #root{
     position:relative;
     width:90%;
@@ -660,6 +812,18 @@ a.containerlink:hover{
     }
 }
 
+@media screen and (max-width:1260px){
+    #obsessions{
+        top:0;
+        float:none;
+        margin:0 0 100px 5%;
+    }
+
+    #entries{
+        margin-bottom:50px;
+    }
+}
+
 @media screen and (max-width:1100px){
     #first{
         position:relative;
@@ -672,6 +836,7 @@ a.containerlink:hover{
     #third{
         position:relative;
     }
+
 }
 
 @media screen and (max-width:800px){
@@ -679,6 +844,11 @@ a.containerlink:hover{
         margin-left:0;
         width:100%;
         margin-top:100px;
+    }
+
+    #entries{
+        width:100%;
+        overflow:hidden;
     }
 }
 
@@ -715,6 +885,15 @@ a.containerlink:hover{
     }
     #toggle{
         opacity:0.9;
+    }
+}
+
+@media screen and (max-width:651px){
+    .entryPic{
+        width:100%;
+    }
+    #obsessions{
+        margin: 0 auto 100px auto;
     }
 }
 @media screen and (max-width:575px) {
