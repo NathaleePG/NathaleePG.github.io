@@ -140,10 +140,26 @@ $(function() {
 
     categoriesOnResize();
 
+    function entriesOnResize(){
+        var target = $("#entries").offset();
+        if ($(window).scrollTop() > (target["top"] - 300) && $(window).scrollTop() > 100){
+            $("#entries").animate({
+                opacity:1
+            }, 500, function(){
+                $("#obsessions").delay(500).animate({
+                    opacity:1
+                }, 500)}).clearQueue(true);
+        }
+    }
+
+    entriesOnResize();
+
     $(window).on("scroll", function(){
         onResize();
         categoriesOnResize();
+        entriesOnResize();
     });
+
 
 
 

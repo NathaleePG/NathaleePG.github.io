@@ -591,6 +591,7 @@ a.containerlink:hover{
     position:relative;
     width:800px;
     margin-bottom:100px;
+    opacity:0;
 }
 
 #head{
@@ -677,6 +678,7 @@ a.containerlink:hover{
     position:relative;
     top:75px;
     margin-left:7%;
+    opacity:0;
 }
 
 .align1{
