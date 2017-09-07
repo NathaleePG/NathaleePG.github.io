@@ -961,6 +961,12 @@ a.containerlink:hover{
     }
 }
 
+@media screen and (max-width:351px){
+    #obsessions{
+        width:100%;
+    }
+}
+
 @media screen and (max-width:326px){
     #containerSec > #categories > ul > li{
         width:100%;
