@@ -19,8 +19,10 @@ $(function() {
     });
     $logo.hide().delay(3000).fadeIn(1250);
     $footer.hide().delay(4800).fadeIn(1250);
+    var myTimer;
 
     $logo.on("click", function(){
+        clearInterval(myTimer);
         $conMain.fadeOut(1500);
         $secCon.delay(1500).fadeIn(1500);
     });
@@ -160,8 +162,17 @@ $(function() {
         entriesOnResize();
     });
 
-
-
+    function bounceInterval(){
+        $('#containerMain > img').animate({
+            width:"172px",
+            marginBottom:"16px"
+        }, 500);
+        $("#containerMain > img").delay(450).animate({
+            width:"162px",
+            marginBottom:"25px"
+        }, 500);
+    }
+    myTimer = setInterval(bounceInterval, 1);
 
 
 
