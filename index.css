@@ -144,6 +144,7 @@ form > input:hover{
     width:185px;
     font-size:0.9em;
     margin:0 2%;
+    box-shadow:1px 1px 3px 1px black;
 }
 
 #containerSec > #fixed > ul:not(.icons) > li > a{
@@ -274,6 +275,7 @@ li span{
     width:50%;
     height:774px;
     background:url("natmain.jpg") center;
+    box-shadow:0 0 25px 0 black;
 }
 
 #containerSec > #containerRight{
@@ -344,6 +346,7 @@ li span{
 
 #containerLeft > ul > li >img:hover{
     box-shadow:0 0 5px 0 black;
+    transform: scale(1.01, 1.01);
 }
 
 #containerRight > p{
