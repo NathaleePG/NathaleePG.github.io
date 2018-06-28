@@ -645,6 +645,10 @@ a.containerlink:hover{
     background:url("e6.jpg") center;
 }
 
+#e7{
+    background:url("e7.jpg") center;
+}
+
 .summary{
     margin:0 10% 25px 10%;
 }
@@ -655,11 +659,21 @@ a.containerlink:hover{
 #entries > ul > li > a{
     background-color: rgba(241, 143, 158, 0.3);
     text-decoration: none;
-    color:black;
     box-shadow:1px 1px 2px 1px black;
     padding:5px;
+    z-index:5;
+    position:relative;
 }
 
+#entries > ul > li > a:hover{
+    color:mediumpurple;
+    transition:color 3s;
+}
+
+#entries > ul > li > a:not(hover){
+    color:black;
+    transition:color 3s;
+}
 #entries > ul > li > a:after{
     position:absolute;
     content:"";
@@ -668,6 +682,7 @@ a.containerlink:hover{
     margin-top:10px;
     border-bottom:2px solid rgb(133, 136, 141);
 }
+
 
 #entries > ul > li > a:before{
     content:"";
